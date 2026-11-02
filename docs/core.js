@@ -68,6 +68,25 @@ export function finishRest(state,now=Date.now()){
  const next=clone(state);next.restLog.unshift({id:uid(),date:now,step:state.step,cycle:state.cycle});return advance(next);
 }
 export function moveExercise(list,index,delta){const copy=list.slice(),to=index+delta;if(index<0||index>=copy.length||to<0||to>=copy.length)return copy;[copy[index],copy[to]]=[copy[to],copy[index]];return copy;}
+export function addSessionSet(state,exerciseId,kind='work'){
+ if(kind!=='work'&&kind!=='warmup')throw new Error('Unbekannte Satzart.');
+ const next=clone(state),exercise=next.active?.exercises.find(e=>e.id===exerciseId);
+ if(!exercise)throw new Error('Diese Übung gehört nicht zum laufenden Training.');
+ if(exercise.logs.length>=40)throw new Error('Maximal 40 Sätze pro Übung.');
+ if(kind==='work'&&exercise.logs.filter(l=>!l.warmup).length>=20)throw new Error('Maximal 20 Arbeitssätze pro Übung.');
+ const log={id:uid(),weight:null,reps:null,done:false,warmup:kind==='warmup'};
+ if(log.warmup){const index=exercise.logs.findIndex(l=>!l.warmup);exercise.logs.splice(index<0?exercise.logs.length:index,0,log);}
+ else exercise.logs.push(log);
+ return next;
+}
+export function removeSessionSet(state,exerciseId,logId){
+ const next=clone(state),exercise=next.active?.exercises.find(e=>e.id===exerciseId);
+ const index=exercise?.logs.findIndex(l=>l.id===logId)??-1;
+ if(index<0)throw new Error('Dieser Satz gehört nicht zum laufenden Training.');
+ if(!exercise.logs[index].warmup&&exercise.logs.filter(l=>!l.warmup).length<=1)throw new Error('Mindestens ein Arbeitssatz muss erhalten bleiben.');
+ exercise.logs.splice(index,1);
+ return next;
+}
 const str=(v,max=150)=>typeof v==='string'&&v.length>0&&v.length<=max;
 const num=(v,min,max)=>typeof v==='number'&&Number.isFinite(v)&&v>=min&&v<=max;
 const integer=(v,min,max)=>num(v,min,max)&&Number.isInteger(v);

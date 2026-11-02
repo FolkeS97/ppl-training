@@ -1,5 +1,5 @@
 /* Bump VERSION whenever a bundled file changes. Updates activate on request. */
-const VERSION = '4.0.0';
+const VERSION = '4.1.0';
 const root = new URL('./', self.registration.scope);
 const PREFIX = `ppl-training:${root.pathname}:`;
 const CACHE = `${PREFIX}${VERSION}`;

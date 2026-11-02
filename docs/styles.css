@@ -17,3 +17,15 @@
 @media(max-width:400px){.header-right{gap:9px}.offline-badge.ready{font-size:10px;gap:3px}.offline-badge.ready svg{width:10px}}
 
 .boot-screen{padding:28px;max-width:600px;margin:50px auto;display:grid;gap:20px}.boot-screen p{line-height:1.6}.boot-screen button{justify-self:start}
+.work-card-tools{display:flex;justify-content:flex-end;margin-top:-6px;margin-bottom:8px}
+.work-card-tools .text-btn{min-height:44px;font-size:12px}
+.set-grid{grid-template-columns:25px minmax(40px,.9fr) minmax(56px,1fr) minmax(45px,.8fr) 42px 38px;gap:7px}
+.set-remove{width:38px;min-height:44px;display:grid;place-items:center;border-radius:9px;background:transparent;color:var(--muted);border:1px solid transparent}
+.set-remove:hover:not(:disabled),.set-remove:focus-visible{background:#362924;border-color:#705049;color:#f3b9a8}
+.set-help{font-size:10px;line-height:1.5;color:var(--muted);margin-top:10px}
+.set-actions .text-btn{min-height:44px}
+.back-row{flex-wrap:wrap;gap:6px}
+.back-row .text-btn{min-height:44px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:600px){.set-grid{grid-template-columns:22px minmax(34px,.8fr) minmax(52px,1fr) minmax(40px,.8fr) 40px 36px;gap:6px}.set-remove{width:36px}}
+@media(max-width:350px){.set-grid{grid-template-columns:20px minmax(30px,.8fr) minmax(45px,1fr) minmax(38px,.8fr) 37px 32px;gap:4px}.set-remove{width:32px}.back-row .text-btn{font-size:11px}}
