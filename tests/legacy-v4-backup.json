@@ -1,0 +1,663 @@
+{
+  "format": "ppl-folke-backup",
+  "schemaVersion": 1,
+  "exportedAt": "1970-01-01T00:01:03.000Z",
+  "data": {
+    "version": 1,
+    "plan": {
+      "push1": {
+        "id": "push1",
+        "name": "Push 1",
+        "focus": "Brust & Bankdrücken",
+        "type": "push",
+        "note": "Letzte sauber mögliche Wiederholung. Beim Bankdrücken Sicherungsablagen oder Spotter nutzen.",
+        "exercises": [
+          {
+            "id": "bench",
+            "exerciseId": "bench",
+            "name": "Bankdrücken · Langhantel",
+            "group": "Brust",
+            "setCount": 2,
+            "repsMin": 6,
+            "repsMax": 8,
+            "rest": 210
+          },
+          {
+            "id": "incline-db",
+            "exerciseId": "incline-db",
+            "name": "Schrägbank · Kurzhanteln",
+            "group": "Brust",
+            "setCount": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "rest": 120
+          },
+          {
+            "id": "cable-fly",
+            "exerciseId": "cable-fly",
+            "name": "Kabel-Flys",
+            "group": "Brust",
+            "setCount": 1,
+            "repsMin": 12,
+            "repsMax": 15,
+            "rest": 90
+          },
+          {
+            "id": "lateral-cable",
+            "exerciseId": "lateral-cable",
+            "name": "Seitheben am Kabel",
+            "group": "Schulter",
+            "setCount": 2,
+            "repsMin": 12,
+            "repsMax": 20,
+            "rest": 90
+          },
+          {
+            "id": "triceps-cable",
+            "exerciseId": "triceps-cable",
+            "name": "Trizepsdrücken am Kabel",
+            "group": "Trizeps",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 15,
+            "rest": 90
+          }
+        ]
+      },
+      "pull1": {
+        "id": "pull1",
+        "name": "Pull 1",
+        "focus": "Kreuzheben & Rücken",
+        "type": "pull",
+        "note": "Beim Kreuzheben jede Wiederholung neu aufbauen. Die saubere Technik bestimmt das Satzende.",
+        "exercises": [
+          {
+            "id": "deadlift",
+            "exerciseId": "deadlift",
+            "name": "Kreuzheben · klassisch",
+            "group": "Rücken",
+            "setCount": 1,
+            "repsMin": 5,
+            "repsMax": 8,
+            "rest": 240
+          },
+          {
+            "id": "lat-neutral",
+            "exerciseId": "lat-neutral",
+            "name": "Latzug · neutral",
+            "group": "Rücken",
+            "setCount": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "rest": 120
+          },
+          {
+            "id": "row-supported",
+            "exerciseId": "row-supported",
+            "name": "Rudern · brustgestützt",
+            "group": "Rücken",
+            "setCount": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "rest": 120
+          },
+          {
+            "id": "reverse-fly",
+            "exerciseId": "reverse-fly",
+            "name": "Reverse Butterfly",
+            "group": "Schulter",
+            "setCount": 2,
+            "repsMin": 12,
+            "repsMax": 20,
+            "rest": 90
+          },
+          {
+            "id": "curl-cable",
+            "exerciseId": "curl-cable",
+            "name": "Bizepscurls am Kabel",
+            "group": "Bizeps",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 15,
+            "rest": 90
+          }
+        ]
+      },
+      "legs1": {
+        "id": "legs1",
+        "name": "Legs 1",
+        "focus": "Quadrizeps & Kniebeugen",
+        "type": "legs",
+        "note": "Kniebeugen im Rack mit Sicherungsablagen. Bei beginnendem Technikverlust den Satz beenden.",
+        "exercises": [
+          {
+            "id": "squat",
+            "exerciseId": "squat",
+            "name": "Kniebeugen · Langhantel",
+            "group": "Quadrizeps",
+            "setCount": 2,
+            "repsMin": 6,
+            "repsMax": 10,
+            "rest": 210
+          },
+          {
+            "id": "leg-press",
+            "exerciseId": "leg-press",
+            "name": "Beinpresse",
+            "group": "Quadrizeps",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 15,
+            "rest": 120
+          },
+          {
+            "id": "leg-extension",
+            "exerciseId": "leg-extension",
+            "name": "Beinstrecker",
+            "group": "Quadrizeps",
+            "setCount": 2,
+            "repsMin": 12,
+            "repsMax": 15,
+            "rest": 90
+          },
+          {
+            "id": "leg-curl-seated",
+            "exerciseId": "leg-curl-seated",
+            "name": "Beinbeuger · sitzend",
+            "group": "Beinbeuger",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 15,
+            "rest": 90
+          },
+          {
+            "id": "calf-standing",
+            "exerciseId": "calf-standing",
+            "name": "Wadenheben · stehend",
+            "group": "Waden",
+            "setCount": 2,
+            "repsMin": 8,
+            "repsMax": 15,
+            "rest": 90
+          },
+          {
+            "id": "cable-crunch",
+            "exerciseId": "cable-crunch",
+            "name": "Kabelcrunches",
+            "group": "Bauch",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 20,
+            "rest": 90
+          }
+        ]
+      },
+      "push2": {
+        "id": "push2",
+        "name": "Push 2",
+        "focus": "Brust & seitliche Schulter",
+        "type": "push",
+        "note": "Bankdrücken mit höherer Wiederholungszahl. Gewichte unabhängig von Push 1 steigern.",
+        "exercises": [
+          {
+            "id": "bench",
+            "exerciseId": "bench",
+            "name": "Bankdrücken · Langhantel",
+            "group": "Brust",
+            "setCount": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "rest": 180
+          },
+          {
+            "id": "chest-press",
+            "exerciseId": "chest-press",
+            "name": "Brustpresse · Maschine",
+            "group": "Brust",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 15,
+            "rest": 120
+          },
+          {
+            "id": "lateral-cable",
+            "exerciseId": "lateral-cable",
+            "name": "Seitheben am Kabel",
+            "group": "Schulter",
+            "setCount": 3,
+            "repsMin": 12,
+            "repsMax": 20,
+            "rest": 90
+          },
+          {
+            "id": "triceps-rope",
+            "exerciseId": "triceps-rope",
+            "name": "Trizepsdrücken · Seil",
+            "group": "Trizeps",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 15,
+            "rest": 90
+          }
+        ]
+      },
+      "pull2": {
+        "id": "pull2",
+        "name": "Pull 2",
+        "focus": "Rücken & hintere Schulter",
+        "type": "pull",
+        "note": "Rückenübungen ohne Kreuzheben, vor dem Beuger-Tag. Rudern bleibt brustgestützt.",
+        "exercises": [
+          {
+            "id": "lat-overhand",
+            "exerciseId": "lat-overhand",
+            "name": "Latzug · Obergriff",
+            "group": "Rücken",
+            "setCount": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "rest": 120
+          },
+          {
+            "id": "row-machine",
+            "exerciseId": "row-machine",
+            "name": "Rudermaschine · brustgestützt",
+            "group": "Rücken",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 15,
+            "rest": 120
+          },
+          {
+            "id": "reverse-fly",
+            "exerciseId": "reverse-fly",
+            "name": "Reverse Butterfly",
+            "group": "Schulter",
+            "setCount": 2,
+            "repsMin": 12,
+            "repsMax": 20,
+            "rest": 90
+          },
+          {
+            "id": "hammer-curl",
+            "exerciseId": "hammer-curl",
+            "name": "Hammercurls",
+            "group": "Bizeps",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 15,
+            "rest": 90
+          }
+        ]
+      },
+      "legs2": {
+        "id": "legs2",
+        "name": "Legs 2",
+        "focus": "Beinbeuger & Gesäß",
+        "type": "legs",
+        "note": "Beinbeuger zuerst. Hip Thrusts ergänzen die Gesäßarbeit. Aufwärmsätze zählen zusätzlich.",
+        "exercises": [
+          {
+            "id": "leg-curl-seated",
+            "exerciseId": "leg-curl-seated",
+            "name": "Beinbeuger · sitzend",
+            "group": "Beinbeuger",
+            "setCount": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "rest": 90
+          },
+          {
+            "id": "leg-curl-lying",
+            "exerciseId": "leg-curl-lying",
+            "name": "Beinbeuger · liegend",
+            "group": "Beinbeuger",
+            "setCount": 2,
+            "repsMin": 12,
+            "repsMax": 15,
+            "rest": 90
+          },
+          {
+            "id": "hip-thrust",
+            "exerciseId": "hip-thrust",
+            "name": "Hip Thrust · Maschine",
+            "group": "Gesäß",
+            "setCount": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "rest": 120
+          },
+          {
+            "id": "leg-press",
+            "exerciseId": "leg-press",
+            "name": "Beinpresse",
+            "group": "Quadrizeps",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 15,
+            "rest": 120
+          },
+          {
+            "id": "calf-seated",
+            "exerciseId": "calf-seated",
+            "name": "Wadenheben · sitzend",
+            "group": "Waden",
+            "setCount": 2,
+            "repsMin": 12,
+            "repsMax": 20,
+            "rest": 90
+          },
+          {
+            "id": "cable-crunch",
+            "exerciseId": "cable-crunch",
+            "name": "Kabelcrunches",
+            "group": "Bauch",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 20,
+            "rest": 90
+          }
+        ]
+      }
+    },
+    "step": 1,
+    "cycle": 1,
+    "active": {
+      "id": "ea2d8798-3ed4-427b-aa51-752f2e26b425",
+      "workoutId": "pull1",
+      "title": "Pull 1",
+      "focus": "Kreuzheben & Rücken",
+      "note": "Testfall: laufendes Training aus Version 4.0",
+      "startedAt": 62000,
+      "step": 1,
+      "cycle": 1,
+      "exercises": [
+        {
+          "id": "deadlift",
+          "exerciseId": "deadlift",
+          "name": "Kreuzheben · klassisch",
+          "group": "Rücken",
+          "setCount": 1,
+          "repsMin": 5,
+          "repsMax": 8,
+          "rest": 240,
+          "logs": [
+            {
+              "id": "legacy-warmup",
+              "weight": 60,
+              "reps": 8,
+              "done": true,
+              "warmup": true
+            },
+            {
+              "id": "69519f54-7980-44ea-9c56-9438f89d808a",
+              "weight": 100,
+              "reps": 6,
+              "done": true,
+              "warmup": false
+            },
+            {
+              "id": "legacy-added-work",
+              "weight": 105,
+              "reps": 5,
+              "done": false,
+              "warmup": false
+            }
+          ]
+        },
+        {
+          "id": "lat-neutral",
+          "exerciseId": "lat-neutral",
+          "name": "Latzug · neutral",
+          "group": "Rücken",
+          "setCount": 2,
+          "repsMin": 8,
+          "repsMax": 12,
+          "rest": 120,
+          "logs": [
+            {
+              "id": "7beb8520-881d-4db2-a303-ff1783bb5414",
+              "weight": null,
+              "reps": null,
+              "done": false,
+              "warmup": false
+            },
+            {
+              "id": "c7499f0b-033e-4f1e-bcca-a9a1b5aa30db",
+              "weight": null,
+              "reps": null,
+              "done": false,
+              "warmup": false
+            }
+          ]
+        },
+        {
+          "id": "row-supported",
+          "exerciseId": "row-supported",
+          "name": "Rudern · brustgestützt",
+          "group": "Rücken",
+          "setCount": 2,
+          "repsMin": 8,
+          "repsMax": 12,
+          "rest": 120,
+          "logs": [
+            {
+              "id": "6e81e3e1-d8e6-49c8-b3a5-e63287571bbf",
+              "weight": null,
+              "reps": null,
+              "done": false,
+              "warmup": false
+            },
+            {
+              "id": "3dcd1ea9-94a2-48d0-90af-ae16bfa409d6",
+              "weight": null,
+              "reps": null,
+              "done": false,
+              "warmup": false
+            }
+          ]
+        },
+        {
+          "id": "reverse-fly",
+          "exerciseId": "reverse-fly",
+          "name": "Reverse Butterfly",
+          "group": "Schulter",
+          "setCount": 2,
+          "repsMin": 12,
+          "repsMax": 20,
+          "rest": 90,
+          "logs": [
+            {
+              "id": "f2e70774-9484-411e-acf4-3d094c0fd83b",
+              "weight": null,
+              "reps": null,
+              "done": false,
+              "warmup": false
+            },
+            {
+              "id": "1844a8dc-a748-4150-9efc-83d2982ad19e",
+              "weight": null,
+              "reps": null,
+              "done": false,
+              "warmup": false
+            }
+          ]
+        },
+        {
+          "id": "curl-cable",
+          "exerciseId": "curl-cable",
+          "name": "Bizepscurls am Kabel",
+          "group": "Bizeps",
+          "setCount": 2,
+          "repsMin": 10,
+          "repsMax": 15,
+          "rest": 90,
+          "logs": [
+            {
+              "id": "716bfb1e-f634-4406-8add-5d183eda5e24",
+              "weight": null,
+              "reps": null,
+              "done": false,
+              "warmup": false
+            },
+            {
+              "id": "ea06329e-c46a-4e99-9678-b7e539e68456",
+              "weight": null,
+              "reps": null,
+              "done": false,
+              "warmup": false
+            }
+          ]
+        }
+      ]
+    },
+    "history": [
+      {
+        "id": "b7cc0769-1ece-4790-876a-b862978eb30c",
+        "workoutId": "push1",
+        "title": "Push 1",
+        "focus": "Brust & Bankdrücken",
+        "note": "",
+        "startedAt": 1000,
+        "step": 0,
+        "cycle": 1,
+        "exercises": [
+          {
+            "id": "bench",
+            "exerciseId": "bench",
+            "name": "Bankdrücken · Langhantel",
+            "group": "Brust",
+            "setCount": 2,
+            "repsMin": 6,
+            "repsMax": 8,
+            "rest": 210,
+            "logs": [
+              {
+                "id": "9ecf1d02-0bd3-4db2-a477-7494b5e5f152",
+                "weight": 80,
+                "reps": 8,
+                "done": true,
+                "warmup": false
+              },
+              {
+                "id": "42ee2628-f871-42b1-811b-9ade0b29d965",
+                "weight": null,
+                "reps": null,
+                "done": false,
+                "warmup": false
+              }
+            ]
+          },
+          {
+            "id": "incline-db",
+            "exerciseId": "incline-db",
+            "name": "Schrägbank · Kurzhanteln",
+            "group": "Brust",
+            "setCount": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "rest": 120,
+            "logs": [
+              {
+                "id": "eca23ee4-20c3-4919-8d02-60ab775a250e",
+                "weight": null,
+                "reps": null,
+                "done": false,
+                "warmup": false
+              },
+              {
+                "id": "69f148c0-b4ff-4074-af9e-b86070504293",
+                "weight": null,
+                "reps": null,
+                "done": false,
+                "warmup": false
+              }
+            ]
+          },
+          {
+            "id": "cable-fly",
+            "exerciseId": "cable-fly",
+            "name": "Kabel-Flys",
+            "group": "Brust",
+            "setCount": 1,
+            "repsMin": 12,
+            "repsMax": 15,
+            "rest": 90,
+            "logs": [
+              {
+                "id": "b70bc079-0028-48db-922e-24db58199d3f",
+                "weight": null,
+                "reps": null,
+                "done": false,
+                "warmup": false
+              }
+            ]
+          },
+          {
+            "id": "lateral-cable",
+            "exerciseId": "lateral-cable",
+            "name": "Seitheben am Kabel",
+            "group": "Schulter",
+            "setCount": 2,
+            "repsMin": 12,
+            "repsMax": 20,
+            "rest": 90,
+            "logs": [
+              {
+                "id": "18d0890d-e7b3-44c6-9474-dd824ea609f4",
+                "weight": null,
+                "reps": null,
+                "done": false,
+                "warmup": false
+              },
+              {
+                "id": "3b563d38-8396-4821-9fc4-51c4a47105a9",
+                "weight": null,
+                "reps": null,
+                "done": false,
+                "warmup": false
+              }
+            ]
+          },
+          {
+            "id": "triceps-cable",
+            "exerciseId": "triceps-cable",
+            "name": "Trizepsdrücken am Kabel",
+            "group": "Trizeps",
+            "setCount": 2,
+            "repsMin": 10,
+            "repsMax": 15,
+            "rest": 90,
+            "logs": [
+              {
+                "id": "870d336c-dda1-42f2-b27c-52c6d258db5b",
+                "weight": null,
+                "reps": null,
+                "done": false,
+                "warmup": false
+              },
+              {
+                "id": "f7f0f5d9-dc9e-4b4f-9983-4aee30ff2c44",
+                "weight": null,
+                "reps": null,
+                "done": false,
+                "warmup": false
+              }
+            ]
+          }
+        ],
+        "completedAt": 61000
+      }
+    ],
+    "restLog": [],
+    "timer": {
+      "end": 123000,
+      "label": "Kreuzheben · klassisch"
+    },
+    "settings": {
+      "timer": true,
+      "installDismissed": false
+    },
+    "lastBackup": null
+  }
+}
