@@ -14,6 +14,7 @@ Nach erfolgreicher Vorbereitung sind Trainings, Planänderungen, Verlauf und Bac
 ## Funktionen und Daten
 
 - Gewichte, Wiederholungen, Arbeitssätze und zusätzliche Aufwärmsätze erfassen.
+- Sätze im laufenden Training über den Papierkorb entfernen; bei eingetragenen Werten zuerst bestätigen. Mindestens ein Arbeitssatz pro Übung bleibt erhalten.
 - Übungen umsortieren, ersetzen, ergänzen oder eigene Übungen anlegen.
 - Änderungen wahlweise für die laufende Einheit oder auch für den Trainingsplan speichern.
 - Pausentimer, Trainingsnotizen, Verlauf und Fortschrittskurven.
@@ -32,6 +33,12 @@ Dieses Repository ist eine vollständig statische App ohne Build oder kostenpfli
 
 Alle Ressourcen, der Manifest-Startpfad und der Service Worker verwenden relative Pfade. Die App funktioniert dadurch auch unter dem Repository-Unterpfad. Cache und lokaler Speicher sind auf diesen App-Pfad begrenzt.
 
+## Bestehende Installation aktualisieren
+
+Die App mit Internet öffnen und unter **Mehr → Offline-Status prüfen → App aktualisieren** die neue Version laden. Das vorhandene Symbol und der bisherige App-Link bleiben nutzbar. Das laufende Training wird vor dem Update gespeichert; das Datenformat und der Speicherschlüssel bleiben unverändert. Bereits vorhandene Backups lassen sich weiterhin importieren.
+
+Im laufenden Training öffnet **Übungen & Reihenfolge** die gesamte Übungsliste. **Übung ändern** direkt an einer aufgeklappten Übung führt zu Ersatzübungen, Vorgaben und Verschieben. Änderungen gelten zunächst für die laufende Einheit; bei Bedarf **Änderungen auch für kommende Einheiten übernehmen** aktivieren.
+
 ## Entwicklung und Prüfung
 
 Voraussetzung für die automatisierten Prüfungen: Node.js ab Version 20. Es müssen keine Pakete installiert werden.
@@ -41,6 +48,6 @@ npm run check
 npm test
 ```
 
-Die Tests prüfen Trainingsrotation, abgeschlossene und laufende Einheiten, Übungsänderungen, Backup-Validierung sowie den echten Service-Worker-Code mit einem vollständig getrennten Netzwerk und einem GitHub-Pages-Unterpfad. Sie ersetzen keinen Test auf einem echten iPhone.
+Die Tests prüfen Trainingsrotation, abgeschlossene und laufende Einheiten, Satzentfernung, Übungsänderungen, Backup-Validierung sowie den echten Service-Worker-Code mit einem vollständig getrennten Netzwerk und einem GitHub-Pages-Unterpfad. Ein mit Version 4.0 erzeugtes Backup mit synthetischen Werten prüft die Weiterverwendung laufender Trainings. Die Prüfungen ersetzen keinen Test auf einem echten iPhone.
 
 Wenn eine veröffentlichte Datei in `docs/` geändert wird, `VERSION` in `docs/sw.js` erhöhen. Eine neue Version wird vollständig vorbereitet und erst über **Mehr → Aktualisieren** aktiviert. Der bestehende Trainingsstand wird vor dem Neuladen gespeichert.
